@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(13, 114, 222);
+}
+
+#aboutUs {
+    padding: 121px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#aboutUs img {
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 20px 0;
+}
+
+.content h2 {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    font-size: 80px;
+    color: #080808;
+}
+
+.content h4 {
+    font-size: 20px;
+    color: #040404;
+    margin: 10px 0;
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+}
+
+.description {
+    color: #070707;
+    font-family: "Dancing Script", cursive;
+    margin: 20px 0;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+.btn {
+    font-weight: bold;
+    border: 2px solid #020202;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    background-color: #f9f7f5;
+}
+
+.btn:hover {
+    border: 2px solid #ed7009;
+    background: transparent;
+    color: #dcc40d;
+}
+
+@media screen and (max-width: 790px) {
+    #aboutUs img {
+        width: 80%;
+    }
+
+    #aboutUs {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
